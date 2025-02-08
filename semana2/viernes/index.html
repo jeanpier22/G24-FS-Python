@@ -41,12 +41,14 @@
             background-color: green;
         }
         .card{
-            background-color: #4b4949;
+            background-color: #343333;
             width:300px;
             padding: 10px;
             border-radius: 10px;
             margin-bottom: 20px;
             margin: 20px;
+            box-shadow: 9px 9px 32px 0px #080808;
+            /* x y blur espesor*/
             
         }
         img{
@@ -57,17 +59,57 @@
         }
         .card-description{
             color: #9f9f9f;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
         }
-        .container-card{
+        .card-container{
+            height: 50vh;
             background-color: #4b4949;
             display: flex;
             justify-content: center;
+        }
+        .green{
+            background-color: green;
+            width: 50%;
+            height: 500px;
+        }
+        .pink{
+            background-color: pink;
+            width: 90%;
+            height: 50%;
+        }
+        .red{
+            background-color: red;
+            width: 90vh;
+            height: 100px;
+        }
+        .container-2{
+            background: linear-gradient(to right, #827d7d, #272626);
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+        }
+        input:focus{
+            background-color: green;
+        }
+        .container-form{
+            height: 50vh;
         }
 
 
     </style>
 </head>
 <body>
+
+    <div class="green">
+        <div class="pink">
+            <div class="red">
+            </div>
+            
+        </div>
+
+    </div>
     <h1> Esta es una prueba con css </h1>
 
     <p>Lorem ipsum,dolor sit amet consectetur adipisicing.</p>
@@ -85,7 +127,7 @@
     <a href="#"> Este es un link </a>
 
 
-    <div class="container-card">
+    <div class="card-container">
         <div class="card">
             <img src="../../semana1/gatitos.jpg" alt="" width="100%">
             <div>
@@ -108,6 +150,41 @@
             </div>
         </div>
     </div>
+
+
+    <div class="container-2">
+        <div class="card">
+            <img src="../../semana1/gatitos.jpg" alt="" width="100%">
+            <div>
+                <p class="card-titulo">Lorem ipsum dolor sit amet.</p>
+                <p class="card-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, modi?</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../../semana1/gatitos.jpg" alt="" width="100%">
+            <div>
+                <p class="card-titulo">Lorem ipsum dolor sit amet.</p>
+                <p class="card-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, modi?</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../../semana1/gatitos.jpg" alt="" width="100%">
+            <div>
+                <p class="card-titulo">Lorem ipsum dolor sit amet.</p>
+                <p class="card-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, modi?</p>
+            </div>
+        </div>
+    </div>
+
+    <form action="" class="container-form" style="text-align: center;">
+        <h2> Datos Personales </h2>
+
+        <div><input type="text" name="" id="" placeholder="Nombres"></div>
+        <div><input type="text" name="" id="" placeholder="Apellidos"></div>
+        <div><input type="mail" name="" id="" placeholder="Correo Electrónico"></div>
+    </form>
+
+
 
 </body>
 </html>

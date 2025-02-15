@@ -53,7 +53,8 @@ body{
     background-image:url("../resources/Background_image@2x.png") ;
     background-position: center;
     background-size: cover;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 h1,h3{
@@ -105,4 +106,6 @@ section{
  h1{
     font-size: 40px;
  }
+
+
 

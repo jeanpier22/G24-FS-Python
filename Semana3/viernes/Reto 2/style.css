@@ -23,6 +23,9 @@ body {
     font-style: normal;
     align-content: center;
     height: 100vh;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
 }
 
 h3 {
@@ -31,7 +34,9 @@ h3 {
 
 /* Crear la grilla */
 section {
-    width: 80%;
+    -top: 20px;
+    padding-bottom: 20px;
+    width: 85%;
     margin: 0 auto;
     display: grid;
     gap: 2em;
